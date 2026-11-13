@@ -4,7 +4,7 @@ from typing import Optional, Literal
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException, Depends
 from pydantic import BaseModel
 
-from app.schemas.report import ReportAnalysis
+from app.schemas.extraction import ExtractionResult
 from app.services.extractor import extract_content
 from app.services.gemini_ai import analyze_medical_report_with_gemini, get_demo_analysis
 from app.services.sample_reports import SAMPLE_CBC_REPORT, SAMPLE_LIPID_REPORT, SAMPLE_METABOLIC_REPORT
